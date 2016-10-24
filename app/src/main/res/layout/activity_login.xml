@@ -93,4 +93,17 @@
             android:textSize="16sp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="380dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/version"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+
 </RelativeLayout>
