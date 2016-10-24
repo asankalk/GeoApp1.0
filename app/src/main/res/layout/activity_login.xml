@@ -44,7 +44,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp">
+        android:layout_marginTop="230dp">
 
         <CheckBox
             android:text="@string/cbRememberMe"
@@ -53,6 +53,13 @@
             android:id="@+id/cbRememberMe"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
+
+        <Button
+            android:text="@string/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="10dp" />
 
     </LinearLayout>
 
