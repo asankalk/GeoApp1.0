@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_dashboard"
     android:layout_width="match_parent"
@@ -31,6 +32,64 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="300dp"></LinearLayout>
+        android:layout_marginTop="320dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/inbox"
+            android:id="@+id/btnInbox"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/options"
+            android:id="@+id/btnOptions"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/managegroup"
+            android:id="@+id/btnManageGroups"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="440dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/searchgroups"
+            android:id="@+id/btnSearchGroups"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/creategroup"
+            android:id="@+id/btnCreateGroup"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/viewgroup"
+            android:id="@+id/btnViewGroup"
+            android:layout_weight="1"
+            android:backgroundTint="#00000000" />
+    </LinearLayout>
 
 </RelativeLayout>

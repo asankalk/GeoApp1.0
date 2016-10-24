@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnInbox" type="id">Inbox</item>
+    <item name="btnOptions" type="id">Options</item>
+    <item name="btnManageGroups" type="id">ManageGroups</item>
+    <item name="btnSearchGroups" type="id" />
+    <item name="btnCreateGroup" type="id">Create Group</item>
+    <item name="btnViewGroup" type="id">View Group</item>
+</resources>
