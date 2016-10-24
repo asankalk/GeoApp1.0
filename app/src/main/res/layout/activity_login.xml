@@ -17,7 +17,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:id="@+id/textFieldHolder">
 
         <EditText
@@ -26,7 +26,7 @@
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/etUserEmail"
-            android:hint="Email Address" />
+            android:hint="@string/txtEmailHint" />
 
         <EditText
             android:layout_width="match_parent"
@@ -36,7 +36,8 @@
             android:id="@+id/etPassWord"
             android:layout_weight="1"
             android:layout_marginTop="25dp"
-            android:hint="Password" />
+            android:hint="@string/txtPassHint"
+            android:textColorLink="#ffffff" />
 
     </LinearLayout>
 
@@ -59,8 +60,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnLogin"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="15dp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linksHolder"
+        android:layout_marginTop="330dp">
+
+        <TextView
+            android:text="@string/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRegister"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:text="@string/txtforgotPw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtforgotPw"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAlignment="textEnd"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </RelativeLayout>
