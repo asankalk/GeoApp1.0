@@ -6,4 +6,14 @@
     <string name="txtEmailHint">Email Address</string>
     <string name="txtRegister">Register</string>
     <string name="txtforgotPw">Forgot Password ?</string>
+    <string name="createGroupTitle">Create Group</string>
+    <string name="edGroupName">Enter Group Name</string>
+    <string name="edGroupDesc">Enter Group Description</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnCreate">Create Group</string>
+    <string name="txtSearchGroupTitle">Search Groups</string>
+    <string name="txtSearch">Type to Search</string>
+    <string name="btnSearch">Go</string>
+
+
 </resources>
