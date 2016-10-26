@@ -15,7 +15,7 @@ public class ViewGroup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_group);
 
-        btnViewGroupBack = (Button) findViewById(R.id.btnCreateGroupBack);
+        btnViewGroupBack = (Button) findViewById(R.id.btnViewGroupBack);
         btnViewGroupBack.setOnClickListener(new View.OnClickListener()
                                               {
                                                   @Override

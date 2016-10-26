@@ -19,12 +19,14 @@
 
         <TextView
             android:text="@string/txtSearchGroupTitle"
-            android:layout_width="266dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtSearchGroupTitle"
             android:textSize="24sp"
             android:textStyle="normal|bold"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:elevation="1dp"
+            android:layout_weight="0.5"/>
 
         <Button
             android:text="@string/btnSearchBack"

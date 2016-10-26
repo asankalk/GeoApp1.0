@@ -24,7 +24,8 @@
             android:id="@+id/textView3"
             android:textSize="24sp"
             android:textStyle="normal|bold"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:layout_weight="0.5"/>
 
         <Button
             android:text="@string/btnCreateGroupBack"

@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtManageTitle"
-            android:layout_weight="1"
+            android:layout_weight="0.50"
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:textColor="@android:color/white" />
