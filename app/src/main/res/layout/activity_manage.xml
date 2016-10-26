@@ -9,6 +9,42 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.asanka.geoapp10.Manage">
+    tools:context="com.example.asanka.geoapp10.Manage"
+    android:background="@drawable/background">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/txtManageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtManageTitle"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:text="@string/btnManageGroupBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnManageGroupBack"
+            android:layout_weight="0.15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:text="Group List Goes here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+    </LinearLayout>
 </RelativeLayout>

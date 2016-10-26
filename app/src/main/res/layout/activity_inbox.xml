@@ -9,6 +9,42 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.asanka.geoapp10.Inbox">
+    tools:context="com.example.asanka.geoapp10.Inbox"
+    android:background="@drawable/background">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/txtInboxTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInboxTitle"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:text="@string/btnInboxBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInboxBack"
+            android:layout_weight="0.15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:text="Messages Goes Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+    </LinearLayout>
 </RelativeLayout>

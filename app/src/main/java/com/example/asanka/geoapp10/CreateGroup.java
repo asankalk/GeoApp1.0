@@ -1,13 +1,30 @@
 package com.example.asanka.geoapp10;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class CreateGroup extends AppCompatActivity {
+
+    private Button btnCreateGroupBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_group);
+
+        btnCreateGroupBack = (Button) findViewById(R.id.btnCreateGroupBack);
+        btnCreateGroupBack.setOnClickListener(new View.OnClickListener()
+                                        {
+                                            @Override
+                                            public void onClick(View v)
+                                            {
+                                                Intent createGroup = new Intent(CreateGroup.this,Dashboard.class);
+                                                startActivity(createGroup);
+                                            }
+                                        }
+        );
     }
 }

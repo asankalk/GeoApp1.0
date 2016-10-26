@@ -9,6 +9,45 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.asanka.geoapp10.Options">
+    tools:context="com.example.asanka.geoapp10.Options"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/txtOptionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtOptionsTitle"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="@string/btnOptionsBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOptionsBack"
+            android:layout_weight="0.15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:text="Options Goes here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+    </LinearLayout>
 
 </RelativeLayout>

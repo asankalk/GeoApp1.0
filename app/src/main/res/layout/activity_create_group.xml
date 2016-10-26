@@ -13,18 +13,32 @@
     android:background="@drawable/background">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <TextView
             android:text="@string/createGroupTitle"
-            android:layout_width="match_parent"
+            android:layout_width="251dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView3"
             android:textSize="24sp"
             android:textStyle="normal|bold"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:text="@string/btnCreateGroupBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCreateGroupBack"
+            android:layout_weight="0.15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
 
         <EditText
             android:layout_width="match_parent"

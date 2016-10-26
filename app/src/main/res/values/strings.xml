@@ -13,7 +13,17 @@
     <string name="btnCreate">Create Group</string>
     <string name="txtSearchGroupTitle">Search Groups</string>
     <string name="txtSearch">Type to Search</string>
-    <string name="btnSearch">Go</string>
+    <string name="btnSearch">Search</string>
+    <string name="txtManageTitle">Manage Group</string>
+    <string name="btnManageGroupBack">Go Back</string>
+    <string name="txtInboxTitle">Inbox</string>
+    <string name="btnInboxBack">Go Back</string>
+    <string name="txtOptionsTitle">Options</string>
+    <string name="btnOptionsBack">Go Back</string>
+    <string name="btnSearchBack">Go Back</string>
+    <string name="btnCreateGroupBack">Go Back</string>
+    <string name="txtViewGroupTitle">View Group</string>
+    <string name="btnViewGroupBack">Go Back</string>
 
 
 </resources>
