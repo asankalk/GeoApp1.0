@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "822451952766",
+    "firebase_url": "https://geoapp-8a315.firebaseio.com",
+    "project_id": "geoapp-8a315",
+    "storage_bucket": "geoapp-8a315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822451952766:android:1726bcd026657f95",
+        "android_client_info": {
+          "package_name": "com.example.asanka.geoapp10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822451952766-ja4alet1k6d9iof9sii1h8dq2ksa7v34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIlItklirnoHeNyYYKMdg7vaVpdocm718"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
