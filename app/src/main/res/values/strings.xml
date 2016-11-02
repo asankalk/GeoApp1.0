@@ -24,6 +24,14 @@
     <string name="btnCreateGroupBack">Go Back</string>
     <string name="txtViewGroupTitle">View Group</string>
     <string name="btnViewGroupBack">Go Back</string>
+    <string name="txtRegTitle">User Registration</string>
+    <string name="btnRegoBack">Go Back</string>
+    <string name="txtEmail">Enter Email Address</string>
+    <string name="txtPassword">Enter Password</string>
+    <string name="btnRegister">Register</string>
+    <string name="txtPwConfirm">Confirm Password</string>
+    <string name="txtConfirmEmail">Confrirm Email Address</string>
+    <string name="txtRegName">Enter Name</string>
 
 
 </resources>

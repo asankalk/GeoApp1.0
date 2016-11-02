@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "822451952766-o16c03iib5k9meosv0789canm8adta4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asanka.geoapp10",
+            "certificate_hash": "E8036F08DE93359B66FCBC6A0C315F155CA61B45"
+          }
+        },
+        {
           "client_id": "822451952766-ja4alet1k6d9iof9sii1h8dq2ksa7v34.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822451952766-ja4alet1k6d9iof9sii1h8dq2ksa7v34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

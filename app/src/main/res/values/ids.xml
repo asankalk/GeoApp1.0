@@ -7,4 +7,5 @@
     <item name="btnCreateGroup" type="id">Create Group</item>
     <item name="btnViewGroup" type="id">View Group</item>
     <item name="btnCreateGroupBack" type="id">Go Back</item>
+    <item name="txtPassword" type="id"/>
 </resources>
