@@ -14,9 +14,12 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Registration extends AppCompatActivity {
 
-    private Button btnRegister;
+    private EditText txtName;
     private EditText txtEmail;
+    private EditText txtConfirmEmail;
     private EditText txtPassword;
+    private  EditText txtPwConfirm;
+    private Button btnRegister;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
@@ -28,15 +31,24 @@ public class Registration extends AppCompatActivity {
 
         btnRegister = (Button) findViewById(R.id.btnRegister);
         txtEmail = (EditText) findViewById(R.id.txtEmail);
+        txtConfirmEmail = (EditText) findViewById(R.id.txtConfirmEmail);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
+        txtPwConfirm = (EditText) findViewById(R.id.txtPwConfirm);
+        txtName = (EditText) findViewById(R.id.txtRegName);
+
+
 
 
     }
 
     private void userRegistration()
     {
+        String name = txtName.getText().toString().trim();
         String email = txtEmail.getText().toString().trim();
+        String confirmEmail = txtConfirmEmail.getText().toString().trim();
         String password = txtPassword.getText().toString().trim();
+        String confirmPass = txtPwConfirm.getText().toString().trim();
+
 
         if(TextUtils.isEmpty(email))
         {
@@ -45,11 +57,27 @@ public class Registration extends AppCompatActivity {
             return;
         }
 
+
+        if(TextUtils.isEmpty(confirmEmail))
+        {
+            Toast.makeText(Registration.this,"Please check both email addreseses",Toast.LENGTH_SHORT);
+            return;
+
+        }
+
         if(TextUtils.isEmpty(password))
         {
             //passwrod empty
 
             Toast.makeText(Registration.this,"Please enter password",Toast.LENGTH_SHORT);
+            return;
+        }
+
+        if(TextUtils.isEmpty(confirmPass))
+        {
+            //passwrod empty
+
+            Toast.makeText(Registration.this,"Please check both passwords",Toast.LENGTH_SHORT);
             return;
         }
 
