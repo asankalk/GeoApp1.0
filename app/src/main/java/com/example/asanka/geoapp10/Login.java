@@ -28,7 +28,7 @@ public class Login extends AppCompatActivity {
     //private Button btnLogin;
     private Button mLoginButton;
     private Button mRegisterUser;
-    private TextView mRegisterButton;
+   // private TextView mRegisterButton;
     private EditText mEmail;
     private EditText mPassword;
     private DatabaseReference mDatabase;
