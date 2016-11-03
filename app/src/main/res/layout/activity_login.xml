@@ -55,7 +55,7 @@
             android:layout_marginTop="15dp" />
 
         <TextView
-            android:text="TextView"
+            android:text="OR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtLoginOr"
@@ -77,36 +77,6 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linksHolder"
-        android:layout_marginTop="330dp">
-
-        <TextView
-            android:text="@string/txtRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtRegister"
-            android:layout_weight="1"
-            android:textStyle="normal|bold"
-            android:textColor="@android:color/white"
-
-            android:textSize="16sp" />
-
-        <TextView
-            android:text="@string/txtforgotPw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtforgotPw"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:textAlignment="textEnd"
-            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout

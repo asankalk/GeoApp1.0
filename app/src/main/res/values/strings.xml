@@ -34,6 +34,7 @@
     <string name="txtRegName">Enter Name</string>
     <string name="txtLoginOr">Or</string>
     <string name="btnRegisterUser">Register</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

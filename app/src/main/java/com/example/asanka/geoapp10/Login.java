@@ -210,7 +210,7 @@ public class Login extends AppCompatActivity {
     }
     private void login()
     {
-      //  Intent i = Dashboard.newIntent(Login.this, mEmail.getText().toString(), mPassword.getText().toString());
-       // startActivity(i);
+        Intent i = Dashboard.newIntent(Login.this, mEmail.getText().toString(), mPassword.getText().toString());
+        startActivity(i);
     }
 }
