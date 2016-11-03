@@ -26,7 +26,9 @@
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/etUserEmail"
-            android:hint="@string/txtEmailHint" />
+            android:hint="@string/txtEmailHint"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -37,7 +39,8 @@
             android:layout_weight="1"
             android:layout_marginTop="25dp"
             android:hint="@string/txtPassHint"
-            android:textColorLink="#ffffff" />
+            android:textColorLink="#ffffff"
+            android:textColor="@android:color/white"/>
 
     </LinearLayout>
 
@@ -63,7 +66,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             tools:text="@string/txtLoginOr"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
 
         <Button
             android:text="@string/btnRegisterUser"
@@ -83,7 +88,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="400dp"
         >
 
         <ImageView

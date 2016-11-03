@@ -3,7 +3,7 @@
     <string name="cbRememberMe">Remember Me</string>
     <string name="btnLogin">Login</string>
     <string name="txtPassHint">Password</string>
-    <string name="txtEmailHint">Email Address</string>
+    <string name="txtEmailHint">Username </string>
     <string name="txtRegister">Register</string>
     <string name="txtforgotPw">Forgot Password ?</string>
     <string name="createGroupTitle">Create Group</string>
