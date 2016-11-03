@@ -32,6 +32,8 @@
     <string name="txtPwConfirm">Confirm Password</string>
     <string name="txtConfirmEmail">Confrirm Email Address</string>
     <string name="txtRegName">Enter Name</string>
+    <string name="txtLoginOr">Or</string>
+    <string name="btnRegisterUser">Register</string>
 
 
 </resources>

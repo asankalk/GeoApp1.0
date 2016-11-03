@@ -27,6 +27,7 @@ public class Login extends AppCompatActivity {
 
     //private Button btnLogin;
     private Button mLoginButton;
+    private Button mRegisterUser;
     private TextView mRegisterButton;
     private EditText mEmail;
     private EditText mPassword;
@@ -49,7 +50,10 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Firebase.setAndroidContext(this);
         mLoginButton = (Button) findViewById(R.id.btnLogin);
-        mRegisterButton = (TextView) findViewById(R.id.txtRegister);
+        mRegisterUser = (Button) findViewById(R.id.btnRegister);
+
+       // mRegisterButton = (TextView) findViewById(R.id.txtRegister);
+
         mEmail = (EditText) findViewById(R.id.etUserEmail);
         mPassword = (EditText) findViewById(R.id.etPassWord);
 
@@ -66,7 +70,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        mRegisterButton.setOnClickListener(new View.OnClickListener(){
+        mRegisterUser.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
 
