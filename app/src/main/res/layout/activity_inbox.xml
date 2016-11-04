@@ -43,9 +43,10 @@
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="387dp"
             android:id="@+id/messsage_content_list"
-            android:background="@android:color/white">
+            android:background="@android:color/white"
+            android:paddingBottom="10dp">
 
         </ListView>
 
@@ -55,8 +56,11 @@
             android:ems="10"
             android:id="@+id/messageTobeSent"
             android:layout_height="wrap_content"
-            android:background="@color/wallet_highlighted_text_holo_light"
-            android:gravity="bottom|center_vertical"/>
+            android:gravity="bottom|center_vertical"
+            android:paddingTop="20dp"
+            android:textColor="@android:color/black"
+            android:hint="Type your message "
+            android:background="@color/cast_expanded_controller_progress_text_color"/>
 
         <Button
             android:text="Send"
