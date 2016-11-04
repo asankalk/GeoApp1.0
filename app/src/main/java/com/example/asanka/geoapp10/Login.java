@@ -174,7 +174,7 @@ public class Login extends AppCompatActivity {
             {
                 if (snapshot.getValue() != null)  // password exists
                 {
-                    Toast.makeText(Login.this, snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Login.this, snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
 
                     //freezeInteraction(false);
                     passwordIsCorrect = true;
