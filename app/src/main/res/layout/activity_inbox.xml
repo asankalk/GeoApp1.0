@@ -41,10 +41,28 @@
         android:layout_height="match_parent"
         android:layout_marginTop="60dp">
 
-        <TextView
-            android:text="Messages Goes Here"
+        <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView5" />
+            android:id="@+id/messsage_content_list"
+            android:background="@android:color/white">
+
+        </ListView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/messageTobeSent"
+            android:layout_height="wrap_content"
+            android:background="@color/wallet_highlighted_text_holo_light"
+            android:gravity="bottom|center_vertical"/>
+
+        <Button
+            android:text="Send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendButton"
+            android:gravity="bottom|center"/>
     </LinearLayout>
 </RelativeLayout>

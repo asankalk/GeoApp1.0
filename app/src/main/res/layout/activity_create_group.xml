@@ -50,7 +50,8 @@
             android:layout_weight="1"
             android:hint="@string/edGroupName"
             android:textColor="@android:color/white"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="50dp"
+            android:textStyle="normal|bold"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -64,7 +65,8 @@
             android:textColor="@android:color/white"
             android:layout_marginTop="50dp"
             android:maxLength="100"
-            android:maxLines="4"/>
+            android:maxLines="4"
+            android:textStyle="normal|bold"/>
     </LinearLayout>
 
     <LinearLayout

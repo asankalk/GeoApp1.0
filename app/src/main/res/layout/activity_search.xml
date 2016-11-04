@@ -13,50 +13,81 @@
     android:background="@drawable/background">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:text="@string/txtSearchGroupTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtSearchGroupTitle"
-            android:textSize="24sp"
-            android:textStyle="normal|bold"
-            android:textColor="@android:color/white"
-            android:elevation="1dp"
-            android:layout_weight="0.5"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
 
-        <Button
-            android:text="@string/btnSearchBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnSearchBack"
-            android:layout_weight="0.15" />
-    </LinearLayout>
+            <EditText
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtSearch"
+                android:hint="@string/txtSearch"
+                android:layout_weight="13.18"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="60dp">
+            <Button
+                android:text="@string/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSearch"
+                android:layout_weight="1"
+                />
 
-        <EditText
-            android:layout_width="244dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/txtSearch"
-            android:hint="@string/txtSearch"
-            android:layout_weight="13.18"/>
 
-        <Button
-            android:text="@string/btnSearch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnSearch"
-            android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/txtSearchGroupTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSearchGroupTitle"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:elevation="1dp"
+                android:layout_weight="0.5"/>
+
+            <Button
+                android:text="@string/btnSearchBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSearchBack"
+                android:layout_weight="0.15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:text="Group List Goes here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobile_list">
+
+            </ListView>
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

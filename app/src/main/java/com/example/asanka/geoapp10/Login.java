@@ -27,21 +27,11 @@ public class Login extends AppCompatActivity {
 
     //private Button btnLogin;
     private Button mLoginButton;
-    private Button mRegisterUser;
-   // private TextView mRegisterButton;
+    private TextView mRegisterButton;
     private EditText mEmail;
     private EditText mPassword;
     private DatabaseReference mDatabase;
 
-    private FirebaseApp app;
-    private FirebaseDatabase database;
-    private FirebaseAuth auth;
-    private FirebaseStorage storage;
-
-    private DatabaseReference databaseRef;
-    private StorageReference storageRef;
-
-    private LinearLayout mLinearLayout;
     Firebase mRef ;
 
     @Override
@@ -50,10 +40,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Firebase.setAndroidContext(this);
         mLoginButton = (Button) findViewById(R.id.btnLogin);
-        mRegisterUser = (Button) findViewById(R.id.btnRegister);
-
-       // mRegisterButton = (TextView) findViewById(R.id.txtRegister);
-
+        mRegisterButton = (Button) findViewById(R.id.btnRegister);
         mEmail = (EditText) findViewById(R.id.etUserEmail);
         mPassword = (EditText) findViewById(R.id.etPassWord);
 
@@ -64,17 +51,17 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // start MainActivity
-                freezeInteraction(true);
+                //freezeInteraction(true);
                 verifyAccount(mEmail.getText().toString(), mPassword.getText().toString());
 
             }
         });
 
-        mRegisterUser.setOnClickListener(new View.OnClickListener(){
+        mRegisterButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
 
-                freezeInteraction(true);
+                //freezeInteraction(true);
 
                 writeNewUser(mEmail.getText().toString(), mPassword.getText().toString());
             };
@@ -98,7 +85,7 @@ public class Login extends AppCompatActivity {
 
 
     }
-    private void freezeInteraction(boolean command)
+    /*private void freezeInteraction(boolean command)
     {
         if(command == true)
         {
@@ -113,13 +100,13 @@ public class Login extends AppCompatActivity {
             mPassword.setEnabled(true);
         }
 
-    }
+    }*/
 
     UserProfile user;
     String tempUserName;
     private void writeNewUser(String username, String password)
     {
-        user = new UserProfile(username, password);
+        user = new UserProfile(username, password, "#", "#");
         tempUserName = username;
         // check if email exists
         Firebase userRef= new Firebase(USERS_LOCATION);
@@ -128,7 +115,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot snapshot)
             {
-                freezeInteraction(false); // when receiving respond from database, unfreeze interaction
+                //freezeInteraction(false); // when receiving respond from database, unfreeze interaction
 
                 if (snapshot.getValue() != null)
                 {
@@ -153,7 +140,7 @@ public class Login extends AppCompatActivity {
     boolean passwordIsCorrect = false;
     private void verifyAccount(String username, String password)
     {
-        user = new UserProfile(username, password);
+        user = new UserProfile(username, password, " ", " ");
         tempUserName = username;
         // check if email exists
         Firebase userRef= new Firebase(USERS_LOCATION);
@@ -165,13 +152,13 @@ public class Login extends AppCompatActivity {
                 if (snapshot.getValue() != null)  // user exists
                 {
                     userNameIsCorrect = true;
-                    freezeInteraction(false);
+                    //freezeInteraction(false);
                 }
                 else  // user does not exists
                 {
                     userNameIsCorrect = false;
-                    Toast.makeText(Login.this, "User does not exists", Toast.LENGTH_SHORT).show();
-                    freezeInteraction(false);
+                    Toast.makeText(Login.this, "Username does not exists", Toast.LENGTH_SHORT).show();
+                    //freezeInteraction(false);
                 }
             }
             @Override
@@ -180,14 +167,16 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        userRef.child(username).child(password).addListenerForSingleValueEvent(new ValueEventListener()
+        userRef.child(username).child("password").addValueEventListener(new ValueEventListener()
         {
             @Override
             public void onDataChange(DataSnapshot snapshot)
             {
                 if (snapshot.getValue() != null)  // password exists
                 {
-                    freezeInteraction(false);
+                    Toast.makeText(Login.this, snapshot.getValue().toString(), Toast.LENGTH_SHORT).show();
+
+                    //freezeInteraction(false);
                     passwordIsCorrect = true;
                     if(userNameIsCorrect&&passwordIsCorrect)
                         login();
@@ -196,8 +185,8 @@ public class Login extends AppCompatActivity {
                 else  // password does not exists
                 {
                     passwordIsCorrect = false;
-                    Toast.makeText(Login.this, "User does not exists", Toast.LENGTH_SHORT).show();
-                    freezeInteraction(false);
+                    Toast.makeText(Login.this, "User password does not exists", Toast.LENGTH_SHORT).show();
+                    //freezeInteraction(false);
                 }
             }
             @Override
